@@ -9,8 +9,9 @@ body {
     font-family: 'Nunito Sans', sans-serif;
     font-size: var(--font-reg);
     color: var(--primary-grey);
-    max-width: 1600px;
+    max-width: 1681px;
     margin: auto;
+    background: url("../images/background.png") no-repeat bottom;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -42,9 +43,10 @@ a {
     --grey2: #919191;
     --grey4: #E9E9E9;
     --font-heading: 24px;
-    --font-reg: 16px;
     --font-sm: 14px;
-    --font-xs: 12px
+    --font-xs: 12px;
+    --font-reg: 16px;
+    --font-large: 40px
 }
 
 /*Utilities */
@@ -57,6 +59,12 @@ a {
     text-align: center;
 }
 
+.content-copy {
+    line-height: 28px;
+    margin-bottom: 24px;
+    letter-spacing: 0.02em;
+}
+
 /*Styles */
 .header {
     padding: 40px 32px 32px;
@@ -64,12 +72,6 @@ a {
 
 .header__title {
     margin-bottom: 8px;
-}
-
-.header__text {
-    line-height: 28px;
-    margin-bottom: 24px;
-    letter-spacing: 0.02em;
 }
 
 .header__action {
@@ -162,6 +164,10 @@ a {
     color: var(--primary-mustard);
 }
 
+.main__copy {
+    display: none;
+}
+
 .footer {
     padding: 80px 25px 50px;
     background: var(--grey0);
@@ -195,6 +201,82 @@ a {
     display: flex;
     justify-content: space-between;
     width: 80%;
+}
+
+/*Media Queries */
+@media (min-width: 600px) {
+    .wrapper {
+        width: 90%;
+        margin: auto;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .header-tablet-and-above {
+        flex-basis: 40%;
+    }
+
+    .header__action {
+        margin-bottom: 0;
+    }
+
+    .main {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .main__form {
+        flex-basis: 50%;
+    }
+
+    .main__copy {
+        display: block;
+        flex-basis: 45%;
+    }
+
+    .main__copy__title {
+        margin-bottom: 10px;
+    }
+
+    .main__copy__content {
+        margin-bottom: 35px;
+    }
+
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .footer__social__container {
+        max-width: 290px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .wrapper {
+        width: 80%;
+    }
+
+    .header__title {
+        font-size: var(--font-large);
+        line-height: 48px;
+    }
+
+    .header-tablet-and-above {
+        flex-basis: 57%;
+    }
+
+    .main {
+        align-items: center;
+    }
 }
 
 

@@ -13,16 +13,18 @@
     <title>Nearcut Challenge | GabbyKC</title>
 </head>
 <body>
-<header class="header">
-    <h1 class="header__title">The Completely Powerful Booking System for Barbers</h1>
-    <p class="header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maecenas sed faucibus
-        volutpat id eleifend quis
-        elementum. </p>
-    <a href="#" class="btn-regular header__action">Get Started</a>
+<header class="header wrapper">
+    <div class="header-tablet-and-above">
+        <h1 class="header__title">The Completely Powerful Booking System for Barbers</h1>
+        <p class="content-copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maecenas sed faucibus
+            volutpat id eleifend quis
+            elementum. </p>
+        <a href="#" class="btn-regular header__action">Get Started</a>
+    </div>
     <img src="public/images/header_image_mobile.png" alt="Stock photo of smartphones">
 </header>
 
-<section class="main">
+<section class="main wrapper">
     <form class="main__form">
         <label class="main__form__label" for="name">Full Name
             <input class="main__form__input" type="text" id="name" name="name"
@@ -34,7 +36,7 @@
         </label>
         <label class="main__form__label" for="number">Phone Number</label>
         <div class="main__form__number-container">
-            <input class="main__form__input main__form__input--number" type="number" id="number" name="number"
+            <input class="main__form__input main__form__input--number" type="tel" id="number" name="number"
                    placeholder="(+49) 000 000 000">
             <label for="numberFlag">
                 <select class="main__form__input main__form__number-selector" name="number-flag"
@@ -64,32 +66,50 @@
         <p class="main__form__account">Already have a Nearcut account? <a class="main__form__login" href="#">Login
             Here</a></p>
     </form>
+    <div class="main__copy">
+        <h2 class="main__copy__title">Complete the registration form to get started</h2>
+        <p class="content-copy main__copy__content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maecenas sed faucibus volutpat id eleifend
+            quis elementum.
+        </p>
+        <p class="content-copy main__copy__content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maecenas sed faucibus volutpat id eleifend
+            quis elementum.
+        </p>
+        <p class="content-copy">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maecenas sed faucibus volutpat id eleifend
+            quis elementum.
+        </p>
+    </div>
 </section>
 
 <footer class="footer">
-    <a href="#">
-        <img src="public/images/nearcut_logo.png" alt="Nearcut Logo">
-    </a>
-    <p class="footer__text">So much more than a booking system</p>
-    <a class="footer__contact" href="tel:+01606277565"><img class="footer__contact__icon" src="public/images/phone.png"
-                                                            alt="Telephone icon">01 606 277 565</a>
-    <a class="footer__contact" href="mailto:hello@example.com">
-        <img class="footer__contact__icon" src="public/images/email.png" alt="Email icon">Email Us
-    </a>
-    <h6 class="footer__social-title">Social Media</h6>
-    <div class="footer__social__container">
-        <a href="https://www.facebook.com/NearcutUK">
-            <img src="public/images/facebook.png" alt="Facebook Logo">
+    <div class="wrapper">
+        <a href="#">
+            <img src="public/images/nearcut_logo.png" alt="Nearcut Logo">
         </a>
-        <a href="https://www.instagram.com/nearcutuk">
-            <img src="public/images/instagram.png" alt="Instagram Logo">
+        <p class="footer__text">So much more than a booking system</p>
+        <a class="footer__contact" href="tel:+01606277565"><img class="footer__contact__icon"
+                                                                src="public/images/phone.png"
+                                                                alt="Telephone icon">01 606 277 565</a>
+        <a class="footer__contact" href="mailto:hello@example.com">
+            <img class="footer__contact__icon" src="public/images/email.png" alt="Email icon">Email Us
         </a>
-        <a href="https://twitter.com/nearcut">
-            <img src="public/images/twitter.png" alt="Twitter Logo">
-        </a>
-        <a href="https://www.linkedin.com/company/nearcut/about">
-            <img src="public/images/linkedin.png" alt="LinkedIn Logo">
-        </a>
+        <h6 class="footer__social-title">Social Media</h6>
+        <div class="footer__social__container">
+            <a href="https://www.facebook.com/NearcutUK">
+                <img src="public/images/facebook.png" alt="Facebook Logo">
+            </a>
+            <a href="https://www.instagram.com/nearcutuk">
+                <img src="public/images/instagram.png" alt="Instagram Logo">
+            </a>
+            <a href="https://twitter.com/nearcut">
+                <img src="public/images/twitter.png" alt="Twitter Logo">
+            </a>
+            <a href="https://www.linkedin.com/company/nearcut/about">
+                <img src="public/images/linkedin.png" alt="LinkedIn Logo">
+            </a>
+        </div>
     </div>
 </footer>
 </body>
