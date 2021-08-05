@@ -68,6 +68,9 @@ a {
 /*Styles */
 .header {
     padding: 40px 32px 32px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .header__title {
@@ -211,8 +214,7 @@ a {
     }
 
     .header {
-        display: flex;
-        align-items: center;
+        flex-direction: row;
         justify-content: space-between;
         padding-left: 0;
         padding-right: 0;
