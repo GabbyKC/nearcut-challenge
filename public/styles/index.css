@@ -38,6 +38,7 @@ a {
     --primary-grey: #242424;
     --primary-white: #ffffff;
     --primary-mustard: #FFEE7A;
+    --grey0: #111111;
     --grey2: #919191;
     --grey4: #E9E9E9;
     --font-heading: 24px;
@@ -159,6 +160,41 @@ a {
 .main__form__login {
     font-weight: bold;
     color: var(--primary-mustard);
+}
+
+.footer {
+    padding: 80px 25px 50px;
+    background: var(--grey0);
+    color: var(--primary-white);
+    font-size: var(--font-sm);
+}
+
+.footer__text {
+    margin-top: 10px;
+    letter-spacing: 0.04em;
+}
+
+.footer__contact {
+    display: block;
+    margin: 16px 0;
+    color: var(--primary-white);
+}
+
+.footer__contact__icon {
+    margin-right: 10px;
+}
+
+.footer__social-title {
+    margin: 78px 0 18px;
+    font-size: var(--font-reg);
+    color: var(--primary-mustard);
+    letter-spacing: 0.04em;
+}
+
+.footer__social__container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
 }
 
 
