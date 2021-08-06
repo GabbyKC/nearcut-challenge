@@ -130,6 +130,9 @@ a {
 }
 
 .main__form__number-selector {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     border-radius: 4px 0 0 4px;
     border-right: 0.4px solid #BDBDBD;
     padding-right: 12px;
@@ -138,6 +141,12 @@ a {
 
 .main__form__input--number::placeholder {
     color: var(--primary-grey);
+}
+
+.main__form__country-selector {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .main__form__label--terms {
@@ -150,9 +159,6 @@ a {
 }
 
 .main__form__terms-input {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
     height: 16px;
     width: 18px;
     margin-right: 8px;
